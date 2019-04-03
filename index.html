@@ -1,122 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" >
 
-    <head>
-      <meta charset="UTF-8">
-      <title>my website</title>
-      <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Yunet Luis Ruiz</title>
+  
+  
+  
       <link rel="stylesheet" href="css/style.css">
-    </head>
 
-    <body class="text-white">
-      <header class="mx-10 h-screen">
-        <div class="absolute pin">
-            <img src="img/index.jpg" alt="" class="md:h-screen md:w-screen">
-        </div>
-        <nav class="relative">
-          <ul class="flex list-reset text-lg justify-center md:justify-end font-sans text-xl">
-            <!-- <li class="p-4"> <a href="#" class="text-white no-underline hover:text-blue-lighter cursor-pointer"> Blog </a> </li> -->
-            <li class="p-4"> <a href="#about_me" class="text-white no-underline hover:text-blue-lighter cursor-pointer"> About me </a> </li>
-            <li class="p-4"> <a href="#portfolio" class="text-white no-underline hover:text-blue-lighter cursor-pointer"> Portfolio </a> </li>
-            <li class="p-4"> <a href="#contact" class="text-white no-underline hover:text-blue-lighter cursor-pointer"> Contact </a> </li>
-            <li class="p-4"> <i class="fa fa-search cursor-pointer"></i> </li>
-            <li class="p-4"> <i class="fa fa-globe cursor-pointer"></i> </li>
+  
+</head>
+
+<body>
+
+  <header id="header">
+  <nav class="topnav" id="myTopnav">
+        <img id="header-img" src="https://image.freepik.com/foto-gratis/cerca-teclas-piano_1232-1774.jpg" alt="piano logo"/>
+        <div class="nav-right">
+          <ul id="menu">
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#how_it_works">How it works</li>
+            <li><a class="nav-link" href="#products">Products</a></li>
           </ul>
-        </nav>
-      </header>
+        </div>
+        <button id="navBtn">&#9776;</button>
+      </nav>  
+</header>
+  <main>
+    <section id="hero">
+      <h1>All about Pianos Company</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required/><br>
+        <input id="submit" type="submit" value="Get Started" class="btn"></input>
+      </form>
+    </section>
+    <section id="how_it_works">
+           <iframe id="video" src="https://www.youtube.com/embed/RsEoX0FbETI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section> 
+    <section id="services">
+      <div class="grid">
+        <div class="icon">
+          <img class="pianos" src="https://image.flaticon.com/icons/svg/26/26478.svg" alt=""/>
+        </div>
+        <div class="desc">
+          <h2>Pianos sale</h2>
+          <p>In our store, you will find the piano you are looking for at the best price.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <img class="pianos"  src="https://image.flaticon.com/icons/png/512/66/66841.png" alt=""/>
+        </div>
+        <div class="desc">
+          <h2>Home delivery</h2>
+          <p>You can buy your piano in our online store, we will do the delivery at home in 3 days maximum.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <img class="pianos"  src="https://image.flaticon.com/icons/svg/28/28480.svg " alt=""/>
+        </div>
+        <div class="desc">
+          <h2>Repairs and maintenance</h2>
+          <p>Piano repairs and piano maintenance will be done by highly qualified and experienced specialists.</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="icon">
+          <img class="pianos"  src="https://www.iscarnet.com/wp-content/uploads/2018/01/18093-200.png" alt=""/>
+        </div>
+        <div class="desc">
+          <h2>Quality</h2>
+          <p>Pianos Company assures its customers an excellent quality service.</p>
+        </div>
+      </div>
+    </section>   
+    <section id="products">
+      <div class="card">
+         <img class="img-card" src="https://media.sweetwater.com/api/i/f-webp__q-85__ha-c7fb213c480ff7a3__hmac-8ca999835bdb8e1944d8ace3dd9664e035bcfd60/store/enhanced/items/GP609Bn/442a9e-gallery_angle_black.jpg.auto.webp" alt="">
+         <h1>Grand Piano</h1>
+         <p class="price">$580.00</p>
+         <p class="description">Grands are the largest piano type, and frequently the most majestic. It's characterized by horizontal soundboards. Most of these pianos have sheet music stands.</p>
+         <button>Select</button>
+        </div>
+      </div>
+      <div class="card">
+         <img class="img-card" src="https://pianopiano.com/wp-content/uploads/2015/08/yamaha_upright_piano_for_rent_pianopiano.jpg?071818" alt="">
+         <h1>Upright Piano</h1>
+         <p class="price">$3,795.00</p>
+         <p class="description">Uprights are the most common type of acoustic piano, and are a popular addition to a living room or parlor.  Like the grand, upright pianos vary in material construction. </p>
+         <button>Select</button>
+        </div>
+      </div>
+<div class="card">
+         <img class="img-card" src="https://www.long-mcquade.com/files/97161/lg_77168b3c3deafb687a2c5d91d33b62a3." alt="">
+         <h1>Electric Piano</h1>
+         <p class="price">$895.61</p>
+         <p class="description">Suitable for beginners or moving performers, electric pianos are usually the most affordable, and although they do not have the qualities of an acoustic, sound continues to improve for the high-end and mid-range instruments. </p>
+         <button>Select</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer> 
+      <div>
+         <span>Copyright 2019, Pianos Company</span>
+      </div>  
+       <div>
+         <ul id="menu">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+       </div>    
+ </footer>
+  
+  
 
-      <main class="relative block">
-        <section id="about_me" class="h-screen">
+    <script  src="js/index.js"></script>
 
-        </section>
 
-        <section id="portfolio" class="h-screen">
 
-        </section>
 
-        <section id="contact" class="flex leading-normal">
-            <aside class="mx-10 w-1/2 m-4">
-              <h1>Get in Touch</h1>
-              <p class="pt-4 text-base">
-                <em>Do you need more information?
-                Plase do not hesitate to contact me if you have any questions,
-                coments or messages. I will try to respond to everything!</em>
-              </p>
-              <div class="pt-4 pb-4">
-                <div>
-                  <i class="fa fa-map-marker"> <em class="pl-2"> Address </em> </i>
-                  <p class="pt-2 pl-4">
-                    Am Campus 1, 41/6 <br>
-                    3400, Klosterneuburg <br>
-                    Austria <br>
-                  </p>
-                </div>
-                <div class="pt-4">
-                  <i class="fa fa-phone"> <em class="pl-1"> Let's Talk </em> </i>
-                  <p class="pt-2 pl-4">
-                    ########### <br>
-                    Mon-Fri 8:00-22:00 <br>
-                  </p>
-                </div>
-                <div class="pt-4">
-                  <i class="fa fa-envelope"> <em class="pl-1"> Email </em> </i>
-                  <p class="pt-2 pl-4">
-                    yunet.lruiz94@gmail.com <br>
-                  </p>
-                </div>
-              </div>
-              <hr>
-              <div class="flex justify-center m-4">
-                <i class="fa fa-facebook pl-10 pr-10 cursor-pointer"></i>
-                <i class="fa fa-linkedin pl-10 pr-10 cursor-pointer"></i>
-                <i class="fa fa-twitter pl-10 pr-10 cursor-pointer"></i>
-                <i class="fa fa-google-plus pl-10 pr-10 cursor-pointer"></i>
-              </div>
-            </aside>
-            <section class="w-1/2 block justify-center m-4">
-              <div class="w-full max-w-lg px-32">
-                <div id="contact-me" class="absolute bg-blue shadow-lg rounded py-4">
-                  <strong class="flex justify-center">Contact Me</strong>
-                </div>
-              </div>
-              <div class="mt-6">
-                <form class="bg-white shadow-lg rounded p-4 text-grey-darker">
-                  <div class="pt-10 mb-6">
-                    <input class="w-full text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" type="text" placeholder="Full name">
-                  </div>
-                  <div class="mb-6">
-                    <input class="w-full text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" type="email" placeholder="Email address">
-                  </div>
-                  <div class="mb-6">
-                    <input class="w-full text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" type="text" placeholder="Subject">
-                  </div>
-                  <div class="mb-6">
-                    <textarea class="w-full text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey h-32" placeholder="Your message"></textarea>
-                  </div>
-                  <div class="mt-6 flex items-center justify-between">
-                    <div class="flex items-left">
-                      <input type="checkbox" name="robot" value="robot">
-                      <p class="pl-1">I'm not robot</p>
-                    </div>
-                    <button class="text-white bg-blue hover:bg-blue-dark py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                      Send message
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </section>
-          </div>
-        </section>
-
-      </main>
-
-      <footer class="bg-blue">
-        <p class="p-4">&copy;<em>2019</em>  Created for Yunet Luis Ruíz</p>
-      </footer>
-
-      <script  src="js/index.js"></script>
-
-    </body>
+</body>
 
 </html>
